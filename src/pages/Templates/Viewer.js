@@ -36,6 +36,8 @@ class Viewer extends React.Component {
     if (window.OZviewer.GetInformation("INPUT_CHECK_VALIDITY") === 'valid') {
       const input = window.OZviewer.GetInformation("INPUT_JSON_ALL"); 
       alert(input);
+      //const oz = document.getElementById('OZviewer');
+      //oz.Script("closeall");
       this.props.close();
     }
   };
